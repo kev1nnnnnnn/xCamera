@@ -1179,6 +1179,13 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
+"@koale/useworker@^4.0.2":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@koale/useworker/-/useworker-4.0.2.tgz#cb540a2581cd6025307c3ca6685bc60748773e58"
+  integrity sha512-xPIPADtom8/3/4FLNj7MvNcBM/Z2FleH85Fdx2O869eoKW8+PoEgtSVvoxWjCWMA46Sm9A5/R1TyzNGc+yM0wg==
+  dependencies:
+    dequal "^1.0.0"
+
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz#7619c2eb21b25483f6d167548b4cfd5a7488c3d5"
@@ -2220,6 +2227,11 @@ depd@~1.1.2:
   resolved "https://registry.yarnpkg.com/depd/-/depd-1.1.2.tgz#9bcd52e14c097763e749b274c4346ed2e560b5a9"
   integrity sha1-m81S4UwJd2PnSbJ0xDRu0uVgtak=
 
+dequal@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/dequal/-/dequal-1.0.1.tgz#dbbf9795ec626e9da8bd68782f4add1d23700d8b"
+  integrity sha512-Fx8jxibzkJX2aJgyfSdLhr9tlRoTnHKrRJuu2XHlAgKioN2j19/Bcbe0d4mFXYZ3+wpE2KVobUVTfDutcD17xQ==
+
 destroy@~1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/destroy/-/destroy-1.0.4.tgz#978857442c44749e4206613e37946205826abd80"
@@ -2368,6 +2380,16 @@ expo-asset@~8.4.3:
     path-browserify "^1.0.0"
     url-parse "^1.4.4"
 
+expo-camera@~12.0.3:
+  version "12.0.3"
+  resolved "https://registry.yarnpkg.com/expo-camera/-/expo-camera-12.0.3.tgz#9afc38c12b973f385d38c7393627f0e2eb3d49a9"
+  integrity sha512-0u0e7ia3+GrJtmpxDQxQ8kp2hSw3eTN0Qt2+w9d6GxLsGaEZY+1/wFp906KGbRXmvJqg6YsjIv/pDoV+BQpwgg==
+  dependencies:
+    "@expo/config-plugins" "^4.0.2"
+    "@koale/useworker" "^4.0.2"
+    expo-modules-core "~0.4.4"
+    invariant "2.2.4"
+
 expo-constants@~12.1.2:
   version "12.1.2"
   resolved "https://registry.yarnpkg.com/expo-constants/-/expo-constants-12.1.2.tgz#b466e82f22653ef725d76fc22aa2e4aa6a17e0d7"
@@ -2376,6 +2398,15 @@ expo-constants@~12.1.2:
     "@expo/config" "^5.0.9"
     expo-modules-core "~0.4.4"
     uuid "^3.3.2"
+
+expo-contacts@~10.0.3:
+  version "10.0.3"
+  resolved "https://registry.yarnpkg.com/expo-contacts/-/expo-contacts-10.0.3.tgz#505bce95ebc46db45b47a4651736445750505e36"
+  integrity sha512-OYe9/y5EpOGACDjkgbmomtXFbPeR2fal9JN5SeGLYKszFn59W7Qf7gCqLWLFNG03F6HhJT9wkxdlK190NBVd9Q==
+  dependencies:
+    "@expo/config-plugins" "^4.0.2"
+    expo-modules-core "~0.4.4"
+    uuid "^3.4.0"
 
 expo-error-recovery@~3.0.3:
   version "3.0.3"
@@ -2406,6 +2437,15 @@ expo-keep-awake@~10.0.0:
   resolved "https://registry.yarnpkg.com/expo-keep-awake/-/expo-keep-awake-10.0.0.tgz#275a3e02f99bc0429790047add126c1dcce60d63"
   integrity sha512-x5zRTjIvSry/EISKvjWpnLERGZj5maCwEouOfiDk0JPa0UTg/zFkT7pmiadAfHT95XUgjjb2DOku+wj6J7el7Q==
 
+expo-location@~13.0.4:
+  version "13.0.4"
+  resolved "https://registry.yarnpkg.com/expo-location/-/expo-location-13.0.4.tgz#b95a1888eccfd1c7f3efb4f1c76332d928d6a7d7"
+  integrity sha512-SPn+utldU5yXWjg99trMCANkx8OEaHVZbYVTd2PH9ib9GrjjpGKjzhPmvA00RUC2XS7MMaKZl0BJg9Gb72F1tQ==
+  dependencies:
+    "@expo/config-plugins" "^4.0.2"
+    expo-modules-core "~0.4.4"
+    unimodules-task-manager-interface "7.0.3"
+
 expo-modules-autolinking@~0.3.3:
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/expo-modules-autolinking/-/expo-modules-autolinking-0.3.3.tgz#95795f2292bd187b388413e36936bfd6fa7a46a9"
@@ -2423,6 +2463,15 @@ expo-modules-core@~0.4.4:
   integrity sha512-/pvI235uApWp156SP8Ve4a/adz2zx/41hppa0Q/XpRe9WPqHoOilOsgcqXuzjZhwyQwzeyBIPEYuqBMO+Vn41g==
   dependencies:
     compare-versions "^3.4.0"
+    invariant "^2.2.4"
+
+expo-sensors@~11.0.3:
+  version "11.0.3"
+  resolved "https://registry.yarnpkg.com/expo-sensors/-/expo-sensors-11.0.3.tgz#df40d8d08531fbe543c547f12468074d51da3666"
+  integrity sha512-VTwEpB98l+pb8nML/wDFhQ18LqZ8bBDchX6HaSLdLrrtp7eYOZZ2blOa2pM8VPZa/plOPKW4iMJ3MkmZnO1f3A==
+  dependencies:
+    "@expo/config-plugins" "^4.0.2"
+    expo-modules-core "~0.4.4"
     invariant "^2.2.4"
 
 expo-status-bar@~1.1.0:
@@ -2911,7 +2960,7 @@ interpret@^1.0.0:
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-1.4.0.tgz#665ab8bc4da27a774a40584e812e3e0fa45b1a1e"
   integrity sha512-agE4QfB2Lkp9uICn7BAqoscw4SZP9kTE2hxiFI3jBPmXJfdqiahTbUuKGsMoN2GtqL9AxhYioAcVvgsb1HvRbA==
 
-invariant@^2.2.2, invariant@^2.2.4:
+invariant@2.2.4, invariant@^2.2.2, invariant@^2.2.4:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.4.tgz#610f3c92c9359ce1db616e538008d23ff35158e6"
   integrity sha512-phJfQVBuaJM5raOpJjSfkiD6BpbCE4Ns//LaXl6wGYtUBY83nWS6Rf9tXm2e8VaK60JEjYldbPif/A2B1C2gNA==
@@ -5213,6 +5262,13 @@ unicode-property-aliases-ecmascript@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/unicode-property-aliases-ecmascript/-/unicode-property-aliases-ecmascript-2.0.0.tgz#0a36cb9a585c4f6abd51ad1deddb285c165297c8"
   integrity sha512-5Zfuy9q/DFr4tfO7ZPeVXb1aPoeQSdeFMLpYuFebehDAhbuevLs5yxSZmIFN1tP5F9Wl4IpJrYojg85/zgyZHQ==
+
+unimodules-task-manager-interface@7.0.3:
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/unimodules-task-manager-interface/-/unimodules-task-manager-interface-7.0.3.tgz#4c65d5bb040947ae4f19fb00888b8e2cce3efbfe"
+  integrity sha512-+dtanGOuFk63tMBKVZuQ3HHxFbhQnToOLgF7UeHKrJf00Nkwt14T9ID57AZMeukUEolvifjVhng97L87gTGq0g==
+  dependencies:
+    expo-modules-core "~0.4.4"
 
 union-value@^1.0.0:
   version "1.0.1"
