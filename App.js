@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { Camera } from 'expo-camera';
+import {CameraType} from 'expo-camera/build/Camera.types';
+import { FontAwesome } from '@expo/vector-icons'
+
 
 export default function App() {
   const [hasPermission, setHasPermission] = useState(null);
@@ -8,7 +11,7 @@ export default function App() {
 
   useEffect(() => {
     (async () => {
-      const { status } = await Camera.requestPermissionsAsync();
+      const { status } = await Camera.requestCameraPermissionsAsync();
       setHasPermission(status === 'granted');
     })();
   }, []);
@@ -33,6 +36,12 @@ export default function App() {
               );
             }}>
             <Text style={styles.text}> Flip </Text>
+            <FontAwesome 
+            name="exchange"
+            size={23}
+            color="red"
+            > 
+            </FontAwesome>
           </TouchableOpacity>
         </View>
       </Camera>
@@ -49,5 +58,26 @@ const styles = StyleSheet.create({
   camera: {
     width: "100%",
     height: "100%",
-  }
+  },
+
+  buttonContainer: {
+    flex: 1,
+    backgroundColor: "transparent",
+    flexDirection: "row",
+  },
+
+  button: {
+    position: "absolute",
+    bottom: 50,
+    left: 30,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: "#fff",
+    margin: 20,
+    height: 50,
+    width: 50,
+    borderRadius: 50
+  },  
+
+
 });
